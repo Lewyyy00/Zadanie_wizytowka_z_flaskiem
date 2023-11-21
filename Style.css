@@ -1,0 +1,20 @@
+img {
+    margin-top: 15px; 
+    display: block; 
+    margin: 0 auto;
+}
+.drugi {
+    color: blue;
+  }
+h1, p, form{
+    padding: 10px;
+    text-align: center;
+  }
+ol{
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin: 0 10px; 
+}
