@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Strona_2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1><strong>Oto moja pierwsza strona</strong></h1>
@@ -13,17 +13,15 @@
         <li>Telefon ...</li>
         <li>Numer rachunku bankowego ...</li>
     </ol>
-        <img src="https://en.meming.world/images/en/thumb/1/17/Willem_Dafoe_Looking_Up.jpg/300px-Willem_Dafoe_Looking_Up.jpg" alt="Kiedy siedzisz juz 6h w pracy ale zegarek pokazuje 08:05" title="To ja">
+    <img src="https://en.meming.world/images/en/thumb/1/17/Willem_Dafoe_Looking_Up.jpg/300px-Willem_Dafoe_Looking_Up.jpg" alt="Kiedy siedzisz już 6h w pracy, ale zegarek pokazuje 08:05" title="To ja">
 
-        <h1><strong>Wyślij wiadomość</strong></h1>
+    <h1><strong>Wyślij wiadomość</strong></h1>
 
-    <form action="/formularz" method="post">
-        
+    <form action="/Strona_2" method="post">
         <textarea id="obszarTekstowy" name="wiadomosc" placeholder="Wpisz swoją wiadomość" rows="4" required></textarea>
-
         <button type="submit">Wyślij</button>
     </form>
 
-    <p><a href="Strona_1.html">Wróć do strony głównej</a></p>
-    </body>
+    <p><a href="{{ url_for('websiteone') }}">Wróć do strony głównej</a></p>
+</body>
 </html>
